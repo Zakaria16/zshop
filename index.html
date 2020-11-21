@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Shop Product Page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Z Fashion Store</a>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span
+                    class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+                    class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="#">Fall 2020</a></li>
+                <li role="presentation"><a href="#">Top Sellers</a></li>
+                <li role="presentation"><a href="#">Royalty Program</a></li>
+            </ul>
+            <!--                <button class="btn btn-primary navbar-btn navbar-right" type="button"><strong>Cart</strong></button>-->
+            <!--           <button class="btn btn-primary navbar-btn navbar-right my-cart-icon"> <span class="glyphicon glyphicon-shopping-cart "><span-->
+            <!--                   class="badge badge-success my-cart-badge"></span></span></button>-->
+
+            <a href="#" class="btn btn-primary navbar-btn navbar-right my-cart-icon">
+                <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart <span
+                    style="background-color: #b94a48;" class="label label-warning my-cart-badge"></span>
+            </a>
+        </div>
+    </div>
+</nav>
+<ol class="breadcrumb">
+    <li><a href="#"><span>Store </span></a></li>
+    <li><a href="#"><span>Men</span></a></li>
+    <li class="active"><span>Suits </span></li>
+</ol>
+<div class="container">
+    <div class="row product">
+        <div class="col-md-5 col-md-offset-0">
+            <div class="container-fluid px-sm-1 py-5 mx-auto">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card gallery">
+                            <div class="d-flex flex-column thumbnails">
+                                <div id="f1" class="tb tb-active"><img class="thumbnail-img fit-image"
+                                                                       src="assets/img/im1.jpg"></div>
+                                <div id="f2" class="tb"><img class="thumbnail-img fit-image" src="assets/img/im2.jpg">
+                                </div>
+                                <div id="f3" class="tb"><img class="thumbnail-img fit-image" src="assets/img/im3.jpg">
+                                </div>
+                                <div id="f4" class="tb"><img class="thumbnail-img fit-image" src="assets/img/im4.jpg">
+                                </div>
+                            </div>
+                            <fieldset id="f11" class="active">
+                                <div class="product-pic"><img class=" img-responsive" src="assets/img/im1.jpg"></div>
+                            </fieldset>
+                            <fieldset id="f21" class="">
+                                <div class="product-pic"><img class=" img-responsive" src="assets/img/im2.jpg"></div>
+                            </fieldset>
+                            <fieldset id="f31" class="">
+                                <div class="product-pic"><img class=" img-responsive" src="assets/img/im3.jpg"></div>
+                            </fieldset>
+                            <fieldset id="f41" class="">
+                                <div class="product-pic"><img class=" img img-responsive" src="assets/img/im4.jpg">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h2>Suit Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. </p>
+
+            <hr>
+            <h5 style="margin-bottom: 1em">Choose color: (<span id="color-label">Red</span>)</h5>
+
+
+            <span data-color="Red" class="label btn label-primary color-indicator"
+                  style="background-color: #eb6864">Rd</span>
+            <span data-color="Blue" class="label btn label-info color-indicator"
+                  style="background-color: #336699">Bl</span>
+            <span data-color="Green" class="label btn label-success color-indicator"
+                  style="background-color: green">Gr</span>
+            <span data-color="Orange" class="label btn label-danger color-indicator"
+                  style="background-color: orange">Or</span>
+
+
+            <hr>
+            <h5>Choose size: (<span id="size-label">XL</span>)</h5>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-default size-btn">SM</button>
+                <button type="button" class="btn btn-default size-btn">M</button>
+                <button type="button" class="btn btn-default size-btn">L</button>
+                <button type="button" class="btn btn-default size-btn">XL</button>
+                <button type="button" class="btn btn-default size-btn">XXL</button>
+            </div>
+            <hr>
+
+            <h3>GHS 150.00 </h3>
+            <button class="btn btn-primary my-cart-btn" type="button" data-id="30_Red_XL" data-name="Suit Jacket"
+                    data-summary="Sed mollis, urna eu tempus facilisis, diam tellus aliquam tortor" data-price="150.00"
+                    data-quantity="1" data-image="https://i.imgur.com/3NusNP2.jpg" data-size="SM" data-color="red">Add
+                to cart
+            </button>
+            <button style="display: none" id="cart-btn" class="btn btn-info  my-cart-icon"><span
+                    class="glyphicon glyphicon-shopping-cart"></span> View Cart <span
+                    class="label label-info my-cart-badge"></span>
+            </button>
+        </div>
+    </div>
+    <div class="page-header">
+        <h3>Product Details</h3>
+    </div>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+            <tr>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+            <tr>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+            <tr>
+                <td>Cell</td>
+                <td>Cell</td>
+                <td>Cell</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="page-header">
+        <h3>Reviews
+            <button class="btn btn-primary write-review" type="button">Write a review</button>
+        </h3>
+    </div>
+    <div class="media">
+        <div class="media-body">
+            <h4>Love this!</h4>
+            <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                    class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non
+                vestibulum libero posuere. Vivamus pharetra leo non nulla egestas, nec malesuada orci finibus. </p>
+            <p><span class="reviewer-name"><strong>John Doe</strong></span><span class="review-date">7 Oct 2020</span>
+            </p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-body">
+            <h4>Fantastic product</h4>
+            <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                    class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non
+                vestibulum libero posuere. Vivamus pharetra leo non nulla egestas, nec malesuada orci finibus. </p>
+            <p><span class="reviewer-name"><strong>Jane Doe</strong></span><span class="review-date">7 Nov 2020</span>
+            </p>
+        </div>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h5>Fashion Store © 2020</h5></div>
+            <div class="col-sm-6 social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
+                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="assets/js/zshop.mycart.js"></script>
+<script src="assets/js/zshop.js"></script>
+</body>
+
+</html>
